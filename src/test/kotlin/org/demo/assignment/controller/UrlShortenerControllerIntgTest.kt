@@ -26,8 +26,7 @@ class UrlShortenerControllerIntgTest {
             .expectStatus().is2xxSuccessful
             .expectBody(String::class.java)
             .returnResult()
-
-            Assertions.assertEquals("$originalUrl, https://www.hindustantimes.com/", result.responseBody)
+        Assertions.assertEquals("$originalUrl, https://www.hindustantimes.com/", result.responseBody)
 
     }
 }

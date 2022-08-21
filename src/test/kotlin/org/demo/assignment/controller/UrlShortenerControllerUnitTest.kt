@@ -2,9 +2,8 @@ package org.demo.assignment.controller
 
 import org.demo.assignment.controlller.UrlShortenerController
 import org.demo.assignment.service.UrlService
-import org.hamcrest.CoreMatchers
+
 import org.junit.jupiter.api.Assertions
-import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
@@ -21,12 +20,11 @@ class UrlShortenerControllerUnitTest {
     @MockBean
     lateinit var urlServiceMock: UrlService
 
-     //@Test
-    fun retrieveOriginalUrl(){
+    //@Test
+    fun retrieveOriginalUrl() {
+
         val shorturl = "gd54f6"
         val originalUrl = "https://www.hindustantimes.com/"
-
-
         val result=  webTestClient.get()
             .uri("api/v1/url/originalurl/shorturl")
             .exchange()
