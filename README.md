@@ -28,3 +28,8 @@ Res:
     "shortUrl": "nzLfGf",
     "createdTs": "2022-08-21T16:08:48.994182Z"
 }
+
+Steps to run :
+1. git clone https://github.com/Gyan0522/url-shortener-assignment.git
+2. mvn install
+3. ./mvnw clean spring-boot:run
